@@ -1,5 +1,17 @@
 # Note
 
+## 2024-06-14 - Yubikeyの買い替え
+
+もうプライベートのyubikeyは8年前のやつなのでそろそろ買い換えることにした。よう8年も壊れなかったな。backup用も含めると2本いるんだが、円安の影響で1本あたり11,600 円する。高いな。gpgやsshの秘密鍵を入れてるから、どうしても高いmultiple protocol対応のシリーズじゃないと使えないんだよな。 https://ykey.yubion.com/products/yubikey-5c-nfc
+
+新しいfirmwareは5.7で、passkey用のslotが25から100まで増えてた。これなら実用に耐えれるかな。device-bound passkeysを使う人が増えそう。 https://www.yubico.com/blog/now-available-for-purchase-yubikey-5-series-and-security-key-series-with-new-5-7-firmware/
+
+> - **Expanded passkey and passwordless storage capabilities** – accommodating up to 100 device-bound passkeys (up from 25), 64 OATH seeds (up from 32), 24 PIV certificates, and 2 OTP seeds at once for a total of 190 credentials.
+
+どうでもいいが、google playの翻訳が盛大に間違えてた。報告する方法がわからないの放置することに。使ってるのiphoneだからごめんね。
+
+![](IMG_1853.jpeg)
+
 ## 2024-06-14 - ニコニコのランサムウェアについて
 
 https://x.com/sigekun/status/1801495357496693048?s=12 によるとどうやらランサムウェアらしい。一度汚染されると復旧時間がかかるのはわかる。bitbankとかはSumo Logic入れてるらしいが、同じことが起こったらすべてのオペレーションに対してaudit logが存在してそこから逆算とかできるのかな。
