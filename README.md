@@ -8,10 +8,6 @@
 
 > - **Expanded passkey and passwordless storage capabilities** – accommodating up to 100 device-bound passkeys (up from 25), 64 OATH seeds (up from 32), 24 PIV certificates, and 2 OTP seeds at once for a total of 190 credentials.
 
-どうでもいいが、google playの翻訳が盛大に間違えてた。報告する方法がわからないの放置することに。使ってるのiphoneだからごめんね。
-
-![](assets/IMG_1856.png)
-
 ## 2024-06-14 - ニコニコのランサムウェアについて
 
 https://x.com/sigekun/status/1801495357496693048?s=12 によるとどうやらランサムウェアらしい。一度汚染されると復旧時間がかかるのはわかる。bitbankとかはSumo Logic入れてるらしいが、同じことが起こったらすべてのオペレーションに対してaudit logが存在してそこから逆算とかできるのかな。
