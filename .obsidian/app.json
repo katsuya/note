@@ -1,5 +1,6 @@
 {
   "strictLineBreaks": false,
   "useMarkdownLinks": true,
-  "attachmentFolderPath": "data"
+  "attachmentFolderPath": "data",
+  "promptDelete": false
 }
