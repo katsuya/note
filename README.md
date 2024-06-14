@@ -102,3 +102,10 @@ macとiphoneでクリップボードをshareしたい。[102430](https://support
 何年ぶりかわからないがObsidianを使って始めてみる。そろそろ認知が落ちてくるだろうから書くことを目的にはじめる。
 
 本当はメンテとかめんどいのでXでやりたいが、XがAPI経由での自分のtweetの取得にお金がかかるのでしょうがない。iphoneとたまにmacで気軽にかけて、かつデータがexportできて検索できれば何でもいいんだが。
+
+2024-06-14の追記。結局以下の理由でObsidianを
+使うのを辞めた。
+
+- desktopは結局editorを使いたい。
+- mobileのobsidianが使いづらい。特にimageまわりの挙動がgithubのrenderと違うためちょっと使い物にならない。
+- githubのmobile appのeditorの出来が思ったよりいい。
