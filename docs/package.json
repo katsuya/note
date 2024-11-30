@@ -1,0 +1,9 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "devDependencies": {
+    "prettier": "3.4.1",
+    "textlint": "14.3.0",
+    "textlint-rule-preset-smarthr": "1.32.1"
+  }
+}

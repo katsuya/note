@@ -11,6 +11,10 @@ help:
 		sort | egrep -v -e '^[^[:alnum:]]' -e none -e '^$@$$'
 none: ;
 
+fix:
+	npx prettier '*.md' --write
+	npx textlint '*.md' --fix
+
 GITIGNORES = Java CMake Maven Gradle Node Python Rust Terraform Go Dart
 GITIGNORES_GLOBAL = Archives \
 						 Backup \
