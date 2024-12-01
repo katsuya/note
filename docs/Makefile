@@ -1,17 +1,7 @@
-SHELL = /bin/bash -eo pipefail
-
-.SUFFIXES =
-
-.DEFAULT = help
-
-.PHONY: help none
-help:
-	$(MAKE) -pRrq -f none 2>/dev/null | \
-		awk -v RS= -F: '/^# File/,/^# Finished Make data base/ {if ($$1 !~ "^[#.]") {print $$1}}' | \
-		sort | egrep -v -e '^[^[:alnum:]]' -e none -e '^$@$$'
-none: ;
+include ./Makefile.shared
 
 fix:
+	@# Help: fix all md files
 	npx prettier '*.md' --write
 	npx textlint '*.md' --fix
 
@@ -22,18 +12,18 @@ GITIGNORES_GLOBAL = Archives \
 						 Linux \
 						 macOS \
 						 Windows \
-						 Xcode \
-						 VisualStudioCode \
-						 JetBrains
+						 Xcode
 GITIGNORE_URL = https://raw.githubusercontent.com/github/gitignore/main
 
 codegen-gitignore: download-gitignores
+	@# Help: regenerates .gitignore from .gitignore.d/*.gitignore
 	for i in $$(ls .gitignore.d/*.gitignore | grep -v Local); do \
 		{ echo "## $$i START"; cat "$$i"; echo "## $$i END"; }; \
 		done > .gitignore;
 	{ i=.gitignore.d/Local.gitignore; echo "## $$i START"; cat "$$i"; echo "## $$i END"; } >> .gitignore
 
 download-gitignores: $(GITIGNORES:%=download-gitignore-%) $(GITIGNORES_GLOBAL:%=download-gitignore-global-%)
+	@# Help: downloads .gitignore files from github/gitignore
 
 $(GITIGNORES:%=download-gitignore-%): download-gitignore-%:
 	curl -sSL "$(GITIGNORE_URL)/$*.gitignore" > ".gitignore.d/$*.gitignore"
