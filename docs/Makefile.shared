@@ -12,4 +12,4 @@ help:
 		awk -v RS= -F: '/(^|\n)# Files(\n|$$)/,/(^|\n)# Finished Make data base/{ if ($$1 !~ "^[#.]") { print $$1 }}' | \
 		sort | egrep -v -e '^[^[:alnum:]]' -e '^$@$$' -e none | \
 		xargs -I _ $(SHELL) -c 'printf "%-40s | " _; $(MAKE) _ -nB | (grep -i "^# Help:" || echo "") | tail -1 | sed "s/^# Help: //g"'
-none:;
+none: ;

@@ -2,6 +2,16 @@
 
 [&#8592; Prev](./2024-Q2.md)
 
+## 2024-12-01 - European Cyber Resilience Act (CRA)
+
+CRAがpublishされていた。3年後から施行らしい。OSS開発者にもとめるsecurity-related processesってどの程度のものなんだろな。
+
+> On the legislative front, the big news is the European Cyber Resilience Act (CRA), which adds mandatory security requirements for all products sold there. By default, she said, vendors must perform a self-assessment of their compliance with those requirements, though products deemed important or critical require a higher degree of scrutiny. Vendors must offer security updates, free of charge, for a minimum support period of five years. They are required to fix vulnerabilities, including those introduced by dependencies incorporated into their products. There is also a requirement to exercise due diligence with incorporated software and to report security incidents.
+>
+> The CRA will likely be published in November, she said, and will go into full force three years later. The effect of this legislation on open-source projects has been the subject of a lot of conversation; that has resulted in numerous modifications to the CRA over time. There are protections in place for contributors to projects; the obligations land on those who monetize a project rather than those who contribute patches to it. "Stewards" that support open-source projects are also protected, but they are required to have security-related processes in place.
+>
+> [The top open-source security events in 2024 - LWN.net](https://lwn.net/Articles/996955/)
+
 ## 2024-12-01 - OSV Scannerについて
 
 [OSV Scanner](https://osv.dev/#use-vulnerability-scanner)を使ってみたが、結構いい感じに使える。GitHubのDependabot alertsを使わないとまともな脆弱性チェックができない状況が終わったかもしれない。まあGoogleが提供しているのでvendor依存な状況は変わらないが、一歩まえに進んだ感じ。正直今までは手間が多すぎて、とりあえずGitHubのrepoにつっこんでた。
@@ -63,5 +73,4 @@ make | npx prettier --stdin-filepath foo.md
 
 ほぼ以下を参考にした。
 
-- https://stackoverflow.com/a/26339924
-- https://stackoverflow.com/a/65243296
+- [how-do-you-get-the-list-of-targets-in-a-makefile](https://stackoverflow.com/questions/4219255)
