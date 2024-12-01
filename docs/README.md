@@ -2,9 +2,25 @@
 
 [&#8592; Prev](./2024-Q2.md)
 
+## 2024-12-01 - M&AのPMIが完了した
+
+月末の着金をもってM&AのPMIが完了した。これでようやく一段落。新しい人生を歩める。しかし、思ったより大変だった。色々うちの事情を考慮すると大丈夫だろと高をくくっていたら、結局ギリギリになってしまった。
+
+PMIは世のなかで1番燃えやすいプロジェクトの1つというのはよくわかった。1年ぐらい長引くケースがあるのもよくわかる。一般論だが、シンプルに関係する部署やロールが多すぎてめんどい。
+
+## 2024-12-01 - 今Windowsが1番の開発環境かもしれない
+
+Windows TerminalとWSL 2の組み合わせは最高かもしれない。何も不満がない。普通に特別な対応が入っていない素のLinux環境が手に入る。macOSはbrewとかbsd由来のcommandがクセがあるし、Linuxのラップトップ環境はセキュリティの問題で採用しにくい。唯一の不満は、Windowsは各メーカーのトラックパッドとキーボードが信じられないくらいしょぼい。それだけが不満かな。
+
+あとどうでもいいが、WSL2でファイルサーバーのプロトコルとして、9Pが使われているのをしった。懐かしいPlan 9だよ。しかし9Pってそんなに軽量なのか。
+
+> We’ve modified the WSL init daemon to initiate a 9P server. This server contains protocols that support Linux metadata, including permissions. A Windows service and driver that act as the client and talks to the 9P server (which is running inside of a WSL instance). Client and server communicate over AF_UNIX sockets, since WSL allows interop between a Windows application and a Linux application using AF_UNIX as described in this post.
+>
+> https://devblogs.microsoft.com/commandline/whats-new-for-wsl-in-windows-10-version-1903/
+
 ## 2024-12-01 - European Cyber Resilience Act (CRA)
 
-CRAがpublishされていた。3年後から施行らしい。OSS開発者にもとめるsecurity-related processesってどの程度のものなんだろな。
+CRAがpublishされていた。3年後から施行らしい。OSS開発者にsecurity-related processesを求めるのは結局変わらなかったのか。まだまだ揉めそうだな。
 
 > On the legislative front, the big news is the European Cyber Resilience Act (CRA), which adds mandatory security requirements for all products sold there. By default, she said, vendors must perform a self-assessment of their compliance with those requirements, though products deemed important or critical require a higher degree of scrutiny. Vendors must offer security updates, free of charge, for a minimum support period of five years. They are required to fix vulnerabilities, including those introduced by dependencies incorporated into their products. There is also a requirement to exercise due diligence with incorporated software and to report security incidents.
 >
