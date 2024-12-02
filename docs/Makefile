@@ -1,4 +1,4 @@
-include ./Makefile.shared
+include ./Makefile.shared.mk
 
 fix:
 	@# Help: fix all md files
