@@ -2,6 +2,28 @@
 
 [&#8592; Prev](./2024-Q2.md)
 
+## 2024-12-03 - AI Agentのprincipal-agent problem
+
+久しぶりにMakefileの[マニュアル](https://www.gnu.org/software/make/manual/make.html)を流し読みした。最近、Makefileに戻ってきててもう、各言語ごとに趣が異なる並列処理がうまくできないbuildツールや大規模開発でしかコスパがあわないツールとかに疲れてしまった。privateでbuildツールに1ミリも時間をかけたくないので、最後にマニュアル読んどくかって感じで読んだ。
+
+どうでもいいが、[principal-agent problem](https://en.wikipedia.org/wiki/Principal%E2%80%93agent_problem)があるためにやはりchatgptは指示側に知識がないとサボるんだよな。これでビシバシ指示が出せるようになった。AI Agentがどれほど賢くなってもprincipal-agent problemの壁は超えれないので、outcomeに責任を持つ人間に知識がないとダメな気がする。事業会社とコンサルの関係と同じだな。
+
+得たのは以下。
+
+- 変数のimmediate expansionとdeferred expansionの違いを思い出した。パースフェーズとかあったな。
+- implict ruleで積み上げてくといつか詰まるので、static pattern ruleを使う。
+- [Quick Reference](https://www.gnu.org/software/make/manual/make.html#Quick-Reference) は意外と使える。
+
+よかったページは以下。
+
+- https://www.gnu.org/software/make/manual/make.html#Reading-Makefiles
+- https://www.gnu.org/software/make/manual/make.html#Parsing-Makefiles
+- https://www.gnu.org/software/make/manual/make.html#Static-Pattern
+- https://www.gnu.org/software/make/manual/make.html#Double_002dColon
+- https://www.gnu.org/software/make/manual/make.html#Parallel-Output
+- https://www.gnu.org/software/make/manual/make.html#Makefile-Conventions
+- https://www.gnu.org/software/make/manual/make.html#Quick-Reference
+
 ## 2024-12-02 - 5年間の学び
 
 5年間の学びをとおして、次は以下を強く意識してやる。
